@@ -1,0 +1,1 @@
+# test-sait-sale-of-subscriptions
