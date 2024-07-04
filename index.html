@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Продажа подписок</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body  class="page">
+        <header class="header">
+        </header>
+        <main class="content">
+          <section class="subscriptions">
+            <h1 class="section-title">Подписки</h1>
+            <p class="section-subtitle">Основные пакеты</p>
+            <ul class="subscriptions__cards card-container">
+              <li class="card">
+                <img class="card__image" src="./images/kniga-na-belom-fone-166.png" alt="картинка">
+                <h3 class="card__title">Заголовок Подписки 1</h3>
+                <p class="card__description">Описание Подписки 1.</p>
+                <button type="button" class="card__button">Подписаться</button>
+              </li>
+              <li class="card">
+                <img class="card__image" src="./images/kniga-na-belom-fone-166.png" alt="картинка">
+                <h3 class="card__title">Заголовок Подписки 2</h3>
+                <p class="card__description">Описание Подписки 2.</p>
+                <button type="button" class="card__button">Подписаться</button>
+              </li>
+              <li class="card">
+                <img class="card__image" src="./images/kniga-na-belom-fone-166.png" alt="картинка">
+                <h3 class="card__title">Заголовок Подписки 3</h3>
+                <p class="card__description">Описание Подписки 3.</p>
+                <button type="button" class="card__button">Подписаться</button>
+              </li>
+              <li class="card">
+                <img class="card__image" src="./images/kniga-na-belom-fone-166.png" alt="картинка">
+                <h3 class="card__title">Заголовок Подписки 4</h3>
+                <p class="card__description">Описание Подписки 4.</p>
+                <button type="button" class="card__button">Подписаться</button>
+              </li>
+            </ul>
+            <p class="section-subtitle">Дополнительные пакеты </p>
+            <ul class="subscriptions__cards card-container cards__groups">
+
+              <!-- Использовала шаблон <template> -->
+
+              <template class="element-template">
+                <li class="card">
+                  <img class="card__image" src="" alt="картинка">
+                  <h3 class="card__title"></h3>
+                  <p class="card__description"></p>
+                  <button type="button" class="card__button">Подписаться</button>
+                </li>
+              </template>
+              
+            </ul>
+          </section>
+        </main>
+        <script src="./script/index.js"></script>
+    </body>
+</html>
