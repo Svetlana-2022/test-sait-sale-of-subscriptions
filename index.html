@@ -4,14 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Продажа подписок</title>
+        <!-- 1. Подключить CSS-файл Bootstrap 3 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <!-- 2. Подключить CSS-файл библиотеки Bootstrap 3 DateTimePicker -->
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body  class="page">
+    <body  class="page  paral">
         <header class="header">
         </header>
         <main class="content">
+          <section class="main-section">
+            <h1 class="section-title">Главный заголовок</h1>
+          </section>
           <section class="subscriptions">
-            <h1 class="section-title">Подписки</h1>
+            <!-- <div class="paral"></div> -->
+            <h2 class="section-title">Подписки</h2>
             <p class="section-subtitle">Основные пакеты</p>
             <ul class="subscriptions__cards card-container">
               <li class="card">
@@ -39,6 +47,9 @@
                 <button type="button" class="card__button">Подписаться</button>
               </li>
             </ul>
+            <div class="block main-section">
+              <h2 class="section-title">Другой блок</h2>
+            </div>
             <p class="section-subtitle">Дополнительные пакеты </p>
             <ul class="subscriptions__cards card-container cards__groups">
 
@@ -55,7 +66,31 @@
               
             </ul>
           </section>
+          <section class="">
+            <form>
+              <div class="form-group">
+                <label for="inputDate">Выберите дату:</label>
+                <input type="date" class="form-control">
+              </div>
+            </form>
+          </section>
+          
         </main>
+        <script>
+          $(function () {
+              $('#datetimepicker2').datetimepicker({
+                  locale: 'ru'
+              });
+          });
+      </script>
+        <!-- 3. Подключить библиотеку jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- 4. Подключить библиотеку moment -->
+        <script src="js/moment-with-locales.min.js"></script>
+        <!-- 5. Подключить js-файл фреймворка Bootstrap 3 -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- 6. Подключить js-файл библиотеки Bootstrap 3 DateTimePicker -->
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
         <script src="./script/index.js"></script>
     </body>
 </html>

@@ -60,3 +60,7 @@ initialCards.forEach(function(card){
 inserstCard(card);
 });
 
+
+
+
+
